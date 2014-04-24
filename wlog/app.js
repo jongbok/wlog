@@ -149,7 +149,7 @@ app.get('/wlog/nodeInfo.json', function(req, res){
 app.get('/wlog/getLog.json', function(req, res){
 	var id = req.param('id');
 	var startBytes = req.param('start') || 0;
-	var stream = fs.createReadStream(global.paths[id], {start: startBytes === 0? 0:startBytes-2});
+	var stream = fs.createReadStream(global.paths[id], {start: startBytes < 3? 0:startBytes-2});
 	stream.setEncoding('utf8');
 	var chunk,
 		obj = {},
@@ -160,7 +160,7 @@ app.get('/wlog/getLog.json', function(req, res){
 	stream.on('readable',function(){
 		while(null !== (chunk = stream.read(1))){
 			var str = chunk.toString();
-			if(isLine){
+			if(startBytes < 3 || isLine){
 				obj.output += str;
 			}
 			obj.bytes += Buffer.byteLength(str);
@@ -188,23 +188,27 @@ server.listen(app.get('port'), function(){
 
 function Watcher(p, socket){
 	this.p = p;
-	this.filterText = '';
 	this.socket = socket;
+	var filterText = '';
 	this.watch = function(curr, prev){
 		var exp, ret = '';
-		if(this.filterText !== ''){
-			exp = new RegExp(this.filterText,'g');
+		console.log('filterText:' + filterText);
+		if(filterText !== ''){
+			exp = new RegExp(filterText,'g');
 		}
 		var stream = byline(fs.createReadStream(p,{start:prev.size, end:curr.size}));
 		stream.on('data', function(line){
 			var str = line.toString();
 			if(exp && exp.test(str)){
-				ret += str;
+				ret += str + '\n';
 			}
 		})
 		.on('end', function(){
 			socket.emit('tail', ret);
 		});
+	};
+	this.setFilterText = function(text){
+		filterText = text;
 	};
 }
 
@@ -214,11 +218,14 @@ io.sockets.on('connection', function(socket) {
 		if(!watcher){
 			watcher = new Watcher(global.paths[data.id], socket);
 		}
-		watcher.filterText = data.filterText;
 		fs.watchFile(global.paths[data.id], watcher.watch);
 	});
 	socket.on('unwatch', function(data) {
 		fs.unwatchFile(global.paths[data.id], watcher.watch);
+	});
+	socket.on('filter', function(data){
+		console.log('filter:' + data.filterText);
+		watcher.setFilterText(data.filterText);
 	});
 });
 
@@ -239,10 +246,12 @@ function shutdown(){
 		if(err){
 			logger.error('cannot write timesize! - ' + err);
 		}
-		server.close(function(){
-			logger.info('wlog server shutdown!');
-			process.exit();
-		});
+
+		logger.info('wlog server shutdown!');
+		if(server){
+			server.close();
+		}
+		process.exit();
 	});
 }
 

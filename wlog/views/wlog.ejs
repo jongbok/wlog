@@ -42,15 +42,13 @@
 							<tr>
 								<th>Date:</th>
 								<td>
-									<select ng-model="search.date" ng-options="date as (date | date:'yyyy/MM/dd') for date in search.dates" ng-change="onChangeDate()" >
-									</select>
-									<input type="text" size="8" maxlength="8" value="00:00:00" ng-model="search.time" ng-keypress="onChangeTime()" placeholder="hh:mm:ss" />
+									<input type="text" id="searchTime" datetimepicker />
 								</td>
 							</tr>
 							<tr>
 								<th>Size: {{search.bytes | number}}</th>
 								<td height="25" >
-									<div id="slider" slider ng-model="search.bytes" ></div>
+									<div id="slider" slider ></div>
 								</td>
 							</tr>
 						</table>
