@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Hello World</title>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.blockUI.js" ></script>
+	<script type="text/javascript" src="lib/jstree/jstree.min.js" ></script>
+	<script type="text/javascript" src="lib/timepicker/jquery-ui-timepicker-addon.min.js" ></script>
+	<script type="text/javascript" src="lib/timepicker/jquery-ui-sliderAccess.js" ></script>
+	<script type="text/javascript" src="lib/angular.min.js" ></script>
+	<script type="text/javascript" src="controller.js" ></script>
+	<link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="lib/timepicker/jquery-ui-timepicker-addon.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jstree/themes/default/style.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body ng-app="app" ng-controller="wlogCtrl" >
+<div class="wrapper">
+	<header class="header">
+	header
+	</header>
+	<div class="middle">
+		<div class="container">
+			<div class="content" >
+				<p style="font-size:11pt;">
+				File Name: <b>{{fileName}}</b>({{fileSize | number}} Bytes)
+				</p>
+				<div id="input" tabs style="border:1px solid;" >
+					<ul>
+						<li><a href="#input-search" >검색</a></li>
+						<li><a href="#input-tail" >tail</a></li>
+					</ul>
+					<div id="input-search" >
+						<table width="100%" >
+							<colgroup>
+								<col width="150" />
+							</colgroup>
+							<tr>
+								<th>Date:</th>
+								<td>
+									<select ng-model="search.date" ng-options="d for d in search.dates" ></select>
+									<input type="text" id="timepicker" size="8" timepicker ng-model="search.time" placeholder="hh:mm:ss" />
+								</td>
+							</tr>
+							<tr>
+								<th>Size: {{search.bytes | number}}</th>
+								<td height="25" >
+									<div id="slider" slider ng-model="search.bytes" ></div>
+								</td>
+							</tr>
+						</table>
+					</div> 
+					<div id="input-tail" >
+						<table width="100%" >
+							<colgroup>
+								<col width="150" />
+							</colgroup>
+							<tr>
+								<th>Filter:</th>
+								<td>
+									<input type="text" size="100" id="filterText" autocomplete ng-model="tail.filterText" ng-keydown="autocomplete.keypress(tail.filterText);" placeholder="검색하고자 하는 정규표현식을 입력하시고 Enter-Key를 입력하세요!" />
+								</td>
+							</tr>
+						</table>					
+					</div>
+				</div>
+				<br/>
+				<textarea id="output" ng-model="output" style="width:100%;" readonly="readonly" ></textarea>
+				<input type="button" value="line fix" onclick="var rows = $('#output').val().split('\n'); $('#output').val(rows.slice(rows.length - 10).join('\n'));" />
+			</div>
+		</div>
+		<aside id="left-sidebar" class="left-sidebar" >
+			<div id="jstree" jstree ng-model="node" ></div>
+		</aside>
+	</div>
+	<footer class="footer">
+	footer
+	</footer>
+</div>
+</body>
+</html>
