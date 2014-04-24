@@ -4,25 +4,87 @@
  * Copyright (c) 2014 Jong-Bok,Park  All rights reserved.
  */
 'use strict';
-Date.prototype.getHms = function(){
-	var hour = this.getHours();
-	var min = this.getMinutes();
-	var sec = this.getSeconds();
-	var format = hour > 9? hour: '0' + hour;
-	format += ':';
-	format += min > 9? min: '0' + min;
-	format += ':';
-	format += sec > 9? sec: '0' + sec;
-	return format;
-};
 
-Date.prototype.setHms = function(hms){
-	var arr = hms.split(':');
-	var hour = parseInt(arr[0]);
-	var min = parseInt(arr[1]);
-	var sec = parseInt(arr[2]);
-	this.setHours(hour, min, sec, 0);
-};
+function sizeToTime($scope){
+	var bytes = $scope.search.bytes;
+	var ret = new Date();
+	var per, gap, time, prev, next, first, last;
+	if($scope.times && $scope.times.length > 0){
+		first = $scope.times[0];
+		last = $scope.times[$scope.times.length-1];
+		if(bytes <= first.size){
+			per = bytes / first.size;
+			gap = new Date(first.time).getTime() - $scope.ctime.getTime();
+			time = $scope.ctime.getTime() + Math.floor(gap * per);
+		}else if(bytes >= last.size){
+			var lastTime = new Date(last.time).getTime();
+			per = 1 - ($scope.fileSize - bytes) / ($scope.fileSize - last.size);
+			gap = $scope.mtime.getTime() - lastTime;
+			time = lastTime + Math.floor(gap * per);
+		}else{
+			for(var i=1; i<$scope.times.length; i++){
+				prev = $scope.times[i-1];
+				next = $scope.times[i];
+				if(bytes >= prev.size && bytes <= next.size){
+					var prevTime = new Date(prev.time).getTime();
+					var nextTime = new Date(next.time).getTime();
+					per = 1 - (next.size - bytes) / (next.size - prev.size);
+					gap = nextTime - prevTime;
+					time = prevTime + Math.floor(gap * per);
+					break;
+				}
+			}
+		}
+	}else{
+		per = bytes / $scope.fileSize;
+		gap = $scope.mtime.getTime() - $scope.ctime.getTime();
+		time = $scope.ctime.getTime() + Math.floor(gap * per);
+	}
+	ret.setTime(time);
+	return ret;
+}
+
+function timeToSize($scope){
+	var d = new Date($scope.search.date);
+	var start = 0;
+	var per = 1;
+	var first, last, prev, next, gap;
+	if(d.getTime() <= $scope.ctime.getTime()){
+		$scope.search.date = new Date($scope.ctime);
+	}else if(d.getTime() >= $scope.mtime.getTime()){
+		console.log('>> mtime:' + $scope.mtime);
+		$scope.search.date = new Date($scope.mtime);
+		start = $scope.fileSize - 1000;
+	}else{
+		if($scope.times && $scope.times.length > 0){
+			first = new Date($scope.times[0].time);
+			last = new Date($scope.times[$scope.times.length-1].time);
+			if(d.getTime() <= first.getTime()){
+				per -= (first.getTime() - d.getTime()) / (first.getTime() - $scope.ctime.getTime());
+				start = Math.floor($scope.times[0].size * per);
+			}else if(d.getTime() >= last.getTime()){
+				gap = $scope.fileSize - $scope.times[$scope.times.length-1].size;
+				per -= ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - last.getTime());
+				start = $scope.times[$scope.times.length-1].size + Math.floor(gap * per);
+			}else{
+				for(var i=1; i<$scope.times.length; i++){
+					prev = new Date($scope.times[i-1].time);
+					next = new Date($scope.times[i].time);
+					gap = $scope.times[i].size - $scope.times[i-1].size;
+					if(d.getTime() >= prev.getTime() && d.getTime() <= next.getTime()){
+						per -= (next.getTime() - d.getTime()) / (next.getTime() - prev.getTime());
+						start = $scope.times[i-1].size + Math.floor(gap * per);
+						break;
+					}
+				}
+			}
+		}else{
+			per -=  ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - $scope.ctime.getTime());
+			start = Math.floor($scope.fileSize * per);
+		}
+	}
+	return start;
+}
 
 $.blockUI.defaults.css.cursor = 'default';
 $.blockUI.defaults.overlayCSS.cursor = 'default';
@@ -64,61 +126,17 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 	
 	$scope.autocomplete = {};
 	$scope.autocomplete.source = ["error|Error|ERROR", "Exception|\\sat\\s"];
-	$scope.autocomplete.keypress = function(filterText){
-		if(event.keyCode === 13){
-			alert(filterText);
+	$scope.autocomplete.keypress = function(text){
+		if(event.which === 13){
+			socket.emit('filter', {filterText: text});
+			console.log('emit filter:' + text);
 		}
 	};
 	
 	function changeDateTime(){
-		var d = new Date($scope.search.date);
-		var times = $scope.search.time.split(':');
-		var start = 0;
-		var per = 1;
-		var first, last, prev, next, gap;
-		d.setHours(times[0], times[1], times[2], 0);
-		if(d.getTime() <= $scope.ctime.getTime()){
-			console.log('calculate start - 1');
-			$scope.search.date = new Date($scope.ctime);
-			$scope.search.time = $scope.ctime.getHms();
-		}else if(d.getTime() >= $scope.mtime.getTime()){
-			console.log('calculate start - 2');
-			console.log('>> mtime:' + $scope.mtime);
-			$scope.search.date = new Date($scope.mtime);
-			$scope.search.time = $scope.mtime.getHms();
-			start = $scope.fileSize - 1000;
-		}else{
-			if($scope.times && $scope.times.length > 1){
-				first = new Date($scope.times[0].time);
-				last = new Date($scope.times[$scope.times.length-1].time);
-				if(d.getTime() <= first.getTime()){
-					console.log('calculate start - 3');
-					per -= (first.getTime() - d.getTime()) / (first.getTime() - $scope.ctime.getTime());
-					start = Math.floor($scope.times[0].size * per);
-				}else if(d.getTime() >= last.getTime()){
-					console.log('calculate start - 4');
-					gap = $scope.fileSize - $scope.times[$scope.times.length-1].size;
-					per -= ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - last.getTime());
-					start = $scope.times[$scope.times.length-1].size + Math.floor(gap * per);
-				}else{
-					console.log('calculate start - 5');
-					for(var i=1; i<$scope.times.length; i++){
-						prev = new Date($scope.times[i-1].time);
-						next = new Date($scope.times[i].time);
-						gap = $scope.times[i].size - $scope.times[i-1].size;
-						if(d.getTime() >= prev.getTime() && d.getTime() <= next.getTime()){
-							per -= (next.getTime() - d.getTime()) / (next.getTime() - prev.getTime());
-							start = $scope.times[i-1].size + Math.floor(gap * per);
-							break;
-						}
-					}
-				}
-			}else{
-				per -=  ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - $scope.ctime.getTime());
-				start = Math.floor($scope.fileSize * per);
-			}
-		}
-		
+		var start = timeToSize($scope);
+		$scope.slider.setValue(start);
+		$scope.search.bytes = start;
 		console.log('start:' + start);
 		$http.jsonp('/wlog/getLog.json?callback=JSON_CALLBACK&id=' + $scope.nodeId + '&start=' + start).
 			success(function(data){
@@ -142,16 +160,14 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		$scope.tabs.idx = tabIdx;
 		if(tabIdx === 1){
 			console.log('tail start');
+			$scope.output = '';
+			socket.emit('watch', {id: $scope.nodeId});
 		}else{
-			console.log('tail stop');
+			socket.emit('unwatch', {id: $scope.nodeId});
 		}
 	};
 
 	$scope.output = '';
-	for(var i=1; i<=1000; i++){
-		$scope.output += (new Date()).toLocaleTimeString() + ' - ' + i + '\n';
-	}
-	
 	$scope.jstree = {};
 	$scope.jstree.initView = function(node){
 		if(node.parent === '#'){
@@ -165,19 +181,19 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 					console.log('ctime:' + ctime + ', mtime:' + mtime);
 					var d = new Date(mtime);
 					d.setHours(0, 0, 0, 0);
-					while(d.getTime() > ctime.getTime()){
+					do{
 						dates.push(new Date(d));
 						d.setDate(d.getDate() - 1);
-					}
+					}while(d.getTime() > ctime.getTime());
 					
+					$scope.search = $scope.search || {};
 					$scope.ctime = ctime;
 					$scope.mtime = mtime;
 					$scope.times = data.times;
 					$scope.fileSize = data.size;
 					$scope.fileName = node.text;
 					$scope.search.dates = dates;
-					$scope.search.date = dates[0];
-					$scope.search.time = dates[0].getHms();
+					$scope.search.date = ctime;
 					$scope.output = '';
 					$scope.nodeId = node.id;
 					
@@ -189,24 +205,32 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		}
 	};
 	
-	socket.on('result', function(data) {
-		console.log(data);
-	});
+	$scope.setOutput = function(text){
+		$scope.$apply(function(){
+			$scope.output += text;
+		});
+		console.log(text);
+	};
+	socket.on('tail', $scope.setOutput);
 	
-	socket.on('tail', function(data){
-		
-	});
-	
-	$scope.slider = {};
+	$scope.slider = $scope.slider || {};
 	$scope.slider.sliding = function(size){
-		alert(size);
+		var d = sizeToTime($scope);
+		$scope.search.date = d;
+		$http.jsonp('/wlog/getLog.json?callback=JSON_CALLBACK&id=' + $scope.nodeId + '&start=' + size).
+		success(function(data){
+			$scope.output = data.output;
+			$scope.lastBytes = data.bytes;
+		}).
+		error(function(){
+			alert('error');
+		});
 	};
 }]);
 
 app.directive('slider', function() {
 	return {
 		restrict : 'A',
-		require : 'ngModel',
 		link : function(scope, element, attrs, ngModelCtrl) {
 			$(function() {
 				element.slider({
@@ -214,17 +238,24 @@ app.directive('slider', function() {
 					max : 0,
 					step : 100,
 					slide : function(event, ui) {
+						scope.search.bytes = ui.value;
+						/*
 						scope.$apply(function(){
 							ngModelCtrl.$setViewValue(ui.value);
 						});
+						*/
 					},
 					stop : function(event, ui) {
 						scope.slider.sliding(ui.value);
 					}
 				});
-				scope.$apply(function(){
-					ngModelCtrl.$setViewValue(0);
+				scope.$watch('fileSize',function(){
+					element.slider('option', 'max', scope.fileSize);
 				});
+				scope.slider = scope.slider || {};
+				scope.slider.setValue = function(val){
+					element.slider('value', val);
+				};
 			});
 		}
 	};
@@ -285,6 +316,29 @@ app.directive('jstree', function() {
 					var node = data.instance.get_node(data.selected[0]);
 					scope.jstree.initView(node);
 				});
+			});
+		}
+	};
+});
+
+app.directive('datetimepicker', function() {
+	return {
+		restrict : 'A',
+		link : function(scope, element, attrs) {
+			$(function() {
+				element.datetimepicker({
+					dateFormat: 'yy/mm/dd',
+					timeFormat: 'HH:mm:ss',
+					onSelect: function(time){
+						scope.search.date = time;
+						scope.onChangeDate();
+					}
+				});
+			});
+			scope.$watch('search.date', function(){
+				if(scope.search && scope.search.date){
+					element.datetimepicker('setDate', scope.search.date);
+				}
 			});
 		}
 	};
