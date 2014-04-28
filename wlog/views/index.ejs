@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Wlog Viewer</title>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="/lib/angular.min.js" ></script>
+	<script type="text/javascript" src="index.js" ></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  <body ng-app="app" ng-controller="indexCtrl" >
+  	<div style="text-align:center;">
+  		<h1>Wlog Viewer</h1>
+	    <table border="1" style="border-collapse: collapse;" align="center" >
+	    	<tr>
+	    		<td>
+	    			<input type="text" ng-model="user.id" placeholder="User ID" required />
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<input type="password" ng-model="user.passWd" placeholder="Password" ng-keypress="keypress()" required />
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<button ng-click="login()" >Log in</button>
+	    		</td>
+	    	</tr>
+	    </table>
+    </div>
+    <div style="color: red; text-align:center;">
+    	{{errMsg || ''}}
+    </div>
+ </body>
 </html>

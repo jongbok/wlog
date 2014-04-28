@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Hello World</title>
+<title>Wlog Viewer</title>
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
@@ -21,7 +21,16 @@
 <body ng-app="app" ng-controller="wlogCtrl" >
 <div class="wrapper">
 	<header class="header">
-	header
+		<table border="0" width="100%" >
+			<tr>
+				<th align="left" style="font-size: 15pt; padding-left: 10px;" >
+					<b>Wlog Viewer</b>
+				</th>
+				<td align="right" >
+					<a href='/logout' >Log out</a>
+				</td>
+			</tr>
+		</table>
 	</header>
 	<div class="middle">
 		<div class="container">
@@ -64,20 +73,29 @@
 									<input type="text" size="100" id="filterText" autocomplete ng-model="tail.filterText" ng-keydown="autocomplete.keypress(tail.filterText);" placeholder="검색하고자 하는 정규표현식을 입력하시고 Enter-Key를 입력하세요!" />
 								</td>
 							</tr>
+							<tr>
+								<th>State:</th>
+								<td>
+									<div ng-switch on="tail.state" >
+										<span ng-switch-when="true" style="clolor: blue;" >Progress</span>
+										<span ng-switch-default style="color: red;" >Stop</span>
+									</div>
+								</td>
+							</tr>
 						</table>					
 					</div>
 				</div>
 				<br/>
 				<textarea id="output" ng-model="output" style="width:100%;" readonly="readonly" ></textarea>
-				<input type="button" value="line fix" onclick="var rows = $('#output').val().split('\n'); $('#output').val(rows.slice(rows.length - 10).join('\n'));" />
+				<span style="color: red;" ><b>{{errMsg}}</b></span>
 			</div>
 		</div>
 		<aside id="left-sidebar" class="left-sidebar" >
 			<div id="jstree" jstree ng-model="node" ></div>
 		</aside>
 	</div>
-	<footer class="footer">
-	footer
+	<footer class="footer" >
+		Copyright (c) 2014 Jong-Bok,Park  All rights reserved.
 	</footer>
 </div>
 </body>
