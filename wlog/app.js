@@ -8,9 +8,7 @@
  */
 var winston = require('winston');
 var fs = require('fs');
-var async = require('async');
 var express = require('express');
-var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var byline = require('byline');
@@ -91,7 +89,7 @@ function loadFileList(){
 					}
 					
 					var watcher = new FileWatcher(p);
-					fs.watchFile(p, { persistent: true, interval: 1000}, watcher.watch);
+					fs.watchFile(p, { persistent: true, interval: 1000 * 60 * 5}, watcher.watch);
 				}
 			}
 		}
@@ -110,11 +108,12 @@ app.set('port', global.config.port || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set("jsonp callback", true);
-//app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+app.use(express.cookieParser(global.config.encryptKey || 'wlog$cookieParser$encrypt#key'));
+app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -123,9 +122,52 @@ if ('development' === app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', function(req, res){
+	if(req.session.user){
+		res.redirect('/wlog');
+	}else{
+		res.render('index');
+	}
+});
+
+app.post('/login', function(req, res){
+	var id = req.param('id');
+	var passWd = req.param('passWd');
+	var ret = {sucess: false};
+	for(var i=0; i<config.users.length; i++){
+		var user = config.users[i];
+		console.log(JSON.stringify(user));
+		if(user.id === id
+				&& user.passwd === passWd){
+			ret.success = true;
+			ret.userId = user.id;
+			ret.userName = user.name;
+			req.session.user = user;
+			break;
+		}
+	}
+	res.jsonp(ret);
+});
+
+app.get('/logout', function(req, res){
+	req.session.user = null;
+	res.redirect('/');
+});
+
+app.all('/wlog/*.json', function(req, res, next){
+	if(req.session.user){
+		next();
+	}else{
+		res.send(403);
+	}
+});
+
 app.get('/wlog', function(req, res){
-	res.render('wlog', global.nodes);
+	if(req.session.user){
+		res.render('wlog', {});
+	}else{
+		res.redirect('/');
+	}
 });
 
 app.get('/wlog/nodes.json', function(req, res){
@@ -175,6 +217,9 @@ app.get('/wlog/getLog.json', function(req, res){
 				break;
 			}
 		}
+		stream.close();
+	})
+	.on('close', function(){
 		res.jsonp(obj);
 	});
 });
@@ -186,8 +231,8 @@ server.listen(app.get('port'), function(){
 });
 
 
-function Watcher(p, socket){
-	this.p = p;
+function Watcher(socket){
+	var p;
 	this.socket = socket;
 	var filterText = '';
 	this.watch = function(curr, prev){
@@ -199,7 +244,11 @@ function Watcher(p, socket){
 		var stream = byline(fs.createReadStream(p,{start:prev.size, end:curr.size}));
 		stream.on('data', function(line){
 			var str = line.toString();
-			if(exp && exp.test(str)){
+			if(exp){
+				if(exp.test(str)){
+					ret += str + '\n';
+				}
+			}else{
 				ret += str + '\n';
 			}
 		})
@@ -210,14 +259,15 @@ function Watcher(p, socket){
 	this.setFilterText = function(text){
 		filterText = text;
 	};
+	this.setPath = function(pt){
+		p = pt;
+	};
 }
 
 io.sockets.on('connection', function(socket) {
-	var watcher;
+	var watcher = new Watcher(socket);
 	socket.on('watch', function(data) {
-		if(!watcher){
-			watcher = new Watcher(global.paths[data.id], socket);
-		}
+		watcher.setPath(global.paths[data.id]);
 		fs.watchFile(global.paths[data.id], watcher.watch);
 	});
 	socket.on('unwatch', function(data) {
