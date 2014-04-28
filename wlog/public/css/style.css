@@ -92,4 +92,6 @@ body {
 .footer {
 	height: 30px;
 	background: #BFF08E;
+	text-align: center;
+	font-size: 12pt;
 }
