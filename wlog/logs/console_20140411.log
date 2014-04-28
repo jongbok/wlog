@@ -1,4 +1,4 @@
-2014-04-17T08:14:21.549Z - info: read server.conf!
+2014-04-17T08:14:21.549Z - info: read server.conf! 
 2014-04-17T08:14:21.553Z - info: make nodes
 Express server listening on port 3000
 [90mGET /wlog [32m200 [90m33ms - 3.19kb[0m

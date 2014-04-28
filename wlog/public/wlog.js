@@ -5,86 +5,56 @@
  */
 'use strict';
 
-function sizeToTime($scope){
-	var bytes = $scope.search.bytes;
+var wlog = {};
+
+wlog.init = function(){
+	var initHeight = $(window).height();
+	var gap = initHeight - $("#wrapper").height();
+	$("#output").height(initHeight-250);
+	$("#left-sidebar").height(initHeight - gap - $("#header").height() - $("#footer").height() );
+};
+
+wlog.sizeToTime = function(bytes, timesize){
 	var ret = new Date();
-	var per, gap, time, prev, next, first, last;
-	if($scope.times && $scope.times.length > 0){
-		first = $scope.times[0];
-		last = $scope.times[$scope.times.length-1];
-		if(bytes <= first.size){
-			per = 1 - bytes / first.size;
-			gap = new Date(first.time).getTime() - $scope.ctime.getTime();
-			time = $scope.ctime.getTime() + Math.floor(gap * per);
-		}else if(bytes >= last.size){
-			var lastTime = new Date(last.time).getTime();
-			per = 1 - ($scope.fileSize - bytes) / ($scope.fileSize - last.size);
-			gap = $scope.mtime.getTime() - lastTime;
-			time = lastTime + Math.floor(gap * per);
-		}else{
-			for(var i=1; i<$scope.times.length; i++){
-				prev = $scope.times[i-1];
-				next = $scope.times[i];
-				if(bytes >= prev.size && bytes <= next.size){
-					var prevTime = new Date(prev.time).getTime();
-					var nextTime = new Date(next.time).getTime();
-					per = 1 - (next.size - bytes) / (next.size - prev.size);
-					gap = nextTime - prevTime;
-					time = prevTime + Math.floor(gap * per);
-					break;
-				}
-			}
+	var per, gap, time, prev, next;
+	for(var i=1; i<timesize.length; i++){
+		prev = timesize[i-1];
+		next = timesize[i];
+		if(bytes >= prev.size && bytes <= next.size){
+			var prevTime = new Date(prev.time).getTime();
+			var nextTime = new Date(next.time).getTime();
+			gap = nextTime - prevTime;
+			per = (bytes - prev.size) / (next.size - prev.size);
+			time = prevTime + Math.floor(gap * per);
+			console.log('sizeToTime>> prev:{time:' + prev.time + ',size:' + prev.size + '}, next:{time:' + next.time + ', size:' + next.size + '}');
+			console.log('sizeTotime>> gap:' + gap + ', per:' + per);
+			break;
 		}
-	}else{
-		per = 1 - bytes / $scope.fileSize;
-		gap = $scope.mtime.getTime() - $scope.ctime.getTime();
-		time = $scope.ctime.getTime() + Math.floor(gap * per);
 	}
 	ret.setTime(time);
 	return ret;
-}
+};
 
-function timeToSize($scope){
-	var d = new Date($scope.search.date);
-	var start = 0;
+wlog.timeToSize = function(time, timesize){
+	var bytes = 0;
 	var per = 1;
-	var first, last, prev, next, gap;
-	if(d.getTime() <= $scope.ctime.getTime()){
-		$scope.search.date = new Date($scope.ctime);
-	}else if(d.getTime() >= $scope.mtime.getTime()){
-		console.log('>> mtime:' + $scope.mtime);
-		$scope.search.date = new Date($scope.mtime);
-		start = $scope.fileSize - 1000;
-	}else{
-		if($scope.times && $scope.times.length > 0){
-			first = new Date($scope.times[0].time);
-			last = new Date($scope.times[$scope.times.length-1].time);
-			if(d.getTime() <= first.getTime()){
-				per -= (first.getTime() - d.getTime()) / (first.getTime() - $scope.ctime.getTime());
-				start = Math.floor($scope.times[0].size * per);
-			}else if(d.getTime() >= last.getTime()){
-				gap = $scope.fileSize - $scope.times[$scope.times.length-1].size;
-				per -= ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - last.getTime());
-				start = $scope.times[$scope.times.length-1].size + Math.floor(gap * per);
-			}else{
-				for(var i=1; i<$scope.times.length; i++){
-					prev = new Date($scope.times[i-1].time);
-					next = new Date($scope.times[i].time);
-					gap = $scope.times[i].size - $scope.times[i-1].size;
-					if(d.getTime() >= prev.getTime() && d.getTime() <= next.getTime()){
-						per -= (next.getTime() - d.getTime()) / (next.getTime() - prev.getTime());
-						start = $scope.times[i-1].size + Math.floor(gap * per);
-						break;
-					}
-				}
-			}
-		}else{
-			per -=  ($scope.mtime.getTime() - d.getTime()) / ($scope.mtime.getTime() - $scope.ctime.getTime());
-			start = Math.floor($scope.fileSize * per);
+	var prev, next, prevTime, nextTime, gap;
+	for(var i=1; i<timesize.length; i++){
+		prev = timesize[i-1];
+		next = timesize[i];
+		prevTime = new Date(prev.time).getTime();
+		nextTime = new Date(next.time).getTime();
+		if(time.getTime() >= prevTime && time.getTime() <= nextTime){
+			gap = next.size - prev.size;
+			per = (time.getTime() - prevTime) / (nextTime - prevTime);
+			bytes = prev.size + Math.floor(gap * per);
+			console.log('timeToSize>> prev:{time:' + prev.time + ',size:' + prev.size + '}, next:{time:' + next.time + ', size:' + next.size + '}');
+			console.log('timeToSize>> gap:' + gap + ', per:' + per);
+			break;
 		}
 	}
-	return start;
-}
+	return bytes;	
+};
 
 $.blockUI.defaults.css.cursor = 'default';
 $.blockUI.defaults.overlayCSS.cursor = 'default';
@@ -133,13 +103,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 			}
 		});
 		
-		var gap = $(window).height() - $("#wrapper").height();
-		$("#output").height($(window).height()-250);
-		$("#left-sidebar").height($(window).height() - gap - $("#header").height() - $("#footer").height() );
-		$(window).resize(function(){
-			$("#output").height($(window).height()-250);
-			$("#left-sidebar").height($(window).height() - gap - $("#header").height() - $("#footer").height() );
-		});
+		wlog.init();
 	});
 	
 	$scope.autocomplete = {};
@@ -152,6 +116,10 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 	};
 	
 	function getLog(start){
+		if(isNaN(start) || start < 0){
+			$scope.errMsg = 'start:' + start + ' - start is not valid!';
+			return;
+		}
 		$scope.slider.setValue(start);
 		$scope.search.bytes = start;
 		console.log('start:' + start);
@@ -165,7 +133,20 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 			});				
 	}
 	$scope.onChangeDate = function(){
-		var start = timeToSize($scope);
+		var time = new Date($scope.search.date);
+		if(time <= $scope.ctime){
+			console.log('min date');
+			time = new Date($scope.ctime);
+			$scope.$apply(function(){
+				$scope.search.date = time;
+			});
+		}else if(time >= $scope.mtime){
+			time = new Date($scope.mtime);
+			$scope.$apply(function(){
+				$scope.search.date = time;
+			});
+		}
+		var start = wlog.timeToSize(time, $scope.timesize);
 		getLog(start);
 	};
 	
@@ -183,6 +164,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 			console.log('unwatch');
 			$scope.tail.state = false;
 			socket.emit('unwatch', {id: $scope.nodeId});
+			getLog(0);
 		}
 	};
 
@@ -202,7 +184,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 					$scope.search = $scope.search || {};
 					$scope.ctime = ctime;
 					$scope.mtime = mtime;
-					$scope.times = data.times;
+					$scope.timesize = data.timesize;
 					$scope.fileSize = data.size;
 					$scope.fileName = node.text;
 					$scope.search.date = ctime;
@@ -218,17 +200,16 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 	};
 	
 	socket.on('tail', function(text){
-		$scope.$apply(function(){
-			$('#output').scrollTop($('#output').scrollHeight);
-			var output = $scope.output + text;
-			var rows = output.split('\n');
-			$scope.output = rows.slice(rows.length - 10000).join('\n');
-		});
+		var output = $scope.output + text;
+		var rows = output.split('\n');
+		$scope.output = rows.slice(rows.length - 10000).join('\n');
+		$scope.$digest();
+		$('#output').scrollTop($('#output').scrollHeight);
 	});
 	
 	$scope.slider = $scope.slider || {};
 	$scope.slider.sliding = function(size){
-		$scope.search.date = sizeToTime($scope);
+		$scope.search.date = wlog.sizeToTime(size, $scope.timesize);
 		getLog(size);
 	};
 }]);

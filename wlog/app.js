@@ -45,6 +45,13 @@ if(fs.existsSync(tempFile)){
 	global.timesize = JSON.parse(data);
 }
 
+Function.prototype.clone = function() {
+	var newfun = new Function('return ' + this.toString())();
+	for ( var key in this)
+		newfun[key] = this[key];
+	return newfun;
+};
+
 function loadFileList(){
 	function FileWatcher(p){
 		this.p = p;
@@ -57,7 +64,8 @@ function loadFileList(){
 		};
 	}
 	
-	global.nodes.length = 0;
+	global.nodes = [];
+	global.paths = {};
 	var today = new Date().getDate();
 	for(var i=0;i<global.config.files.length; i++){
 		logger.debug('load file - ' + global.config.files[i].path);
@@ -97,7 +105,7 @@ function loadFileList(){
 	logger.info('files load end.');
 }
 loadFileList();
-setInterval(loadFileList, global.config.fileReloadTime || 1000 * 60 * 60 * 6);
+//setInterval(loadFileList, global.config.fileReloadTime || 1000 * 60 * 60 * 6);
 
 var maxLine = global.config.maxLine || 1000;
 logger.info('make nodes');
@@ -178,13 +186,16 @@ app.get('/wlog/nodeInfo.json', function(req, res){
 	var id = req.param('id');
 	var p = global.paths[id];
 	var stat = fs.statSync(p);
+	var timesize = global.timesize[p] || [];
+	timesize.unshift({time: stat.ctime, size: 0});
+	timesize.push({time: stat.mtime, size: stat.size});
 	var ret = {
-		size: stat.size,
-		ctime: stat.ctime,
-		mtime: stat.mtime,
-		times: global.timesize[p] || []
+		"size": stat.size,
+		"ctime": stat.ctime,
+		"mtime": stat.mtime,
+		"timesize": timesize
 	};
-	logger.debug('nodeInfo.json:' + p + ' - ' + global.timesize[p]);
+	logger.debug('nodeInfo.json:' + p);
 	res.jsonp(ret);
 });
 
@@ -224,59 +235,117 @@ app.get('/wlog/getLog.json', function(req, res){
 	});
 });
 
+app.get('/health', function(req, res) {
+	  res.send(new Buffer(JSON.stringify({
+	    pid: process.pid,
+	    memory: process.memoryUsage(),
+	    uptime: process.uptime()
+	  })));
+	});
+
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 server.listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  logger.info('Express server listening on port ' + app.get('port'));
 });
 
 
 function Watcher(socket){
-	var p;
-	this.socket = socket;
+	var filePath;
 	var filterText = '';
-	this.watch = function(curr, prev){
-		var exp, ret = '';
-		console.log('filterText:' + filterText);
-		if(filterText !== ''){
-			exp = new RegExp(filterText,'g');
+	var callback = new Callback();
+	this.watch = function(pt){
+		if(filePath && filePath !== pt){
+			fs.unwatchFile(filePath, callback.onChange);
 		}
-		var stream = byline(fs.createReadStream(p,{start:prev.size, end:curr.size}));
-		stream.on('data', function(line){
-			var str = line.toString();
-			if(exp){
-				if(exp.test(str)){
+		fs.watchFile(pt, { persistent: true, interval: 500 }, callback.onChange);
+		filePath = pt;
+		logger.debug('watch start ' + filePath);
+	};
+	this.unwatch = function(){
+		logger.debug('Watcher - unwatch');
+		fs.unwatchFile(filePath, callback.onChange);
+	};
+	
+	function Callback(){
+		this.onChange = function(curr, prev){
+			logger.debug('Watcher - onChange - start');
+			var exp, ret = '';
+			logger.debug('Watcher - filterText:' + filterText);
+			if(filterText !== ''){
+				exp = new RegExp(filterText,'g');
+			}
+			var stream = byline(fs.createReadStream(filePath,{start:prev.size, end:curr.size}));
+			stream.on('data', function(line){
+				var str = line.toString();
+				if(exp){
+					if(exp.test(str)){
+						ret += str + '\n';
+					}
+				}else{
 					ret += str + '\n';
 				}
-			}else{
-				ret += str + '\n';
-			}
-		})
-		.on('end', function(){
-			socket.emit('tail', ret);
-		});
-	};
-	this.setFilterText = function(text){
-		filterText = text;
-	};
-	this.setPath = function(pt){
-		p = pt;
-	};
+			})
+			.on('end', function(){
+				socket.emit('tail', ret);
+				logger.debug('Watcher - onChange - end');
+			});
+		};
+	}
 }
 
 io.sockets.on('connection', function(socket) {
-	var watcher = new Watcher(socket);
+	var filePath;
+	var filterText = '';	
+	var callback = new Callback();
+//	var watcher = new Watcher(socket);
 	socket.on('watch', function(data) {
-		watcher.setPath(global.paths[data.id]);
-		fs.watchFile(global.paths[data.id], watcher.watch);
+//		watcher.watch(global.paths[data.id]);
+		var pt = global.paths[data.id];
+		if(filePath && filePath !== pt){
+			fs.unwatchFile(filePath, callback.onChange);
+		}
+		fs.watchFile(pt, callback.onChange);
+		filePath = pt;
+		logger.debug('watch start - ' + pt);	
 	});
 	socket.on('unwatch', function(data) {
-		fs.unwatchFile(global.paths[data.id], watcher.watch);
+//		watcher.unwatch();
+		fs.unwatchFile(filePath, callback.onChange);
+		logger.debug('unwatch - ' + filePath);
 	});
 	socket.on('filter', function(data){
-		console.log('filter:' + data.filterText);
-		watcher.setFilterText(data.filterText);
+		logger.debug('>>socket.io filter - ' + global.paths[data.id] + ':' + data.filterText);
+		logger.debug('filter:' + data.filterText);
+//		watcher.setFilterText(data.filterText);
+		filterText = data.filterText;
 	});
+	
+	function Callback(){
+		this.onChange = function(curr, prev){
+			logger.debug('Watcher - onChange - start');
+			var exp, ret = '';
+			logger.debug('Watcher - filterText:' + filterText);
+			if(filterText !== ''){
+				exp = new RegExp(filterText,'g');
+			}
+			var stream = byline(fs.createReadStream(filePath,{start:prev.size, end:curr.size}));
+			stream.on('data', function(line){
+				var str = line.toString();
+				if(exp){
+					if(exp.test(str)){
+						ret += str + '\n';
+					}
+				}else{
+					ret += str + '\n';
+				}
+			})
+			.on('end', function(){
+				socket.emit('tail', ret);
+				logger.debug('Watcher - onChange - end');
+			});
+		};
+	}
 });
 
 function shutdown(){

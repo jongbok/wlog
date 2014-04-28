@@ -351,3 +351,1002 @@
 {"level":"info","message":"make nodes","timestamp":"2014/04/25 18:08:42,429"}
 {"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/25 18:08:42,432"}
 {"level":"debug","message":"nodeInfo.json:D:\\\\workspace\\\\test\\\\logs/console.log - [object Object]","timestamp":"2014/04/25 18:09:07,718"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 09:47:07,533"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 3600000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 09:47:07,536"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 09:47:07,537"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 09:47:07,538"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 09:47:07,539"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 09:47:07,539"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 09:47:07,539"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 09:47:07,540"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 09:47:07,541"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 09:47:07,541"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 09:47:07,542"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 09:47:07,543"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 09:47:07,546"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 09:47:31,594"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140412.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 09:48:40,916"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140413.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 09:48:59,697"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140414.log - undefined","timestamp":"2014/04/28 09:49:09,962"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140415.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 09:49:24,930"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 09:58:49,338"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 10:05:03,986"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 10:05:12,93"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 3600000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 10:05:12,96"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 10:05:12,98"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 10:05:12,99"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 10:05:12,99"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 10:05:12,99"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 10:05:12,100"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 10:05:12,100"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 10:05:12,100"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 10:05:12,101"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 10:05:12,101"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 10:05:12,102"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 10:05:12,105"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:05:23,425"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:07:49,486"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:09:56,888"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:12:54,798"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:13:38,382"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:15:43,467"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:18:41,898"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:19:41,234"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:21:27,659"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:22:32,176"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:23:34,775"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:27:54,115"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:28:28,813"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:30:38,429"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:31:56,889"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:34:39,117"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:47:31,742"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:48:59,997"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:49:16,5"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140412.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 10:51:42,588"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:51:43,364"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:53:27,542"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:56:24,30"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:58:43,559"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 10:59:53,485"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 11:03:53,908"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - undefined","timestamp":"2014/04/28 11:04:50,734"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 11:05:12,101"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 11:05:12,106"}
+{"level":"debug","message":"logs/console_20140411.log - first timesize! ","timestamp":"2014/04/28 11:05:12,107"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:05:12,109"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:05:12,109"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 11:05:12,110"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:05:12,111"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 11:05:12,112"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:05:12,113"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 11:05:12,113"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 11:07:20,519"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 11:07:23,910"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 3600000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 11:07:23,914"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 11:07:23,916"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 11:07:23,917"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 11:07:23,917"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:07:23,918"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:07:23,918"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 11:07:23,918"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:07:23,919"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 11:07:23,919"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 11:07:23,919"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 11:07:23,920"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 11:07:23,920"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 11:07:23,923"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log - [object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 11:07:40,78"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140412.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 11:08:01,84"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140413.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 11:08:05,959"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 11:28:53,31"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 11:31:41,645"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 11:39:06,115"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 11:41:40,814"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 11:42:49,715"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 12:00:15,122"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - undefined","timestamp":"2014/04/28 12:01:42,888"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 12:07:23,921"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 12:07:23,927"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 12:07:23,928"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 12:07:23,930"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 12:07:23,932"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 12:07:23,933"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 12:07:23,934"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 12:07:23,934"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 12:07:23,936"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - first timesize! ","timestamp":"2014/04/28 12:07:23,936"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 12:07:23,937"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:12:23,934"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 12:13:42,888"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:17:23,936"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:22:23,942"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:27:23,948"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:32:23,954"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:37:23,959"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:42:23,964"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:47:23,969"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:52:23,975"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 12:57:23,982"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:02:23,988"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:07:10,393"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:07:13,487"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 3600000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:07:13,490"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:07:13,491"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:07:13,492"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:07:13,493"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:07:13,493"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:07:13,494"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:07:13,494"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:07:13,495"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:07:13,495"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:07:13,495"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:07:13,495"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:07:13,496"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:07:13,497"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:07:13,499"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:07:59,115"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:08:02,381"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:08:02,384"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:08:02,386"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:08:02,386"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:08:02,386"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:08:02,387"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:08:02,387"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:08:02,388"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:08:02,388"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:08:02,388"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:08:02,389"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:08:02,389"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:08:02,389"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:08:02,390"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:08:02,392"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:08:20,395"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:09:02,403"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:09:02,405"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:09:02,406"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:09:02,407"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:09:02,407"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:09:02,408"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:09:02,409"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:09:02,409"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:09:02,410"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:09:02,411"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:09:02,416"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:10:02,422"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:10:02,424"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:10:02,424"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:10:02,425"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:10:02,427"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:10:02,428"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:10:02,429"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:10:02,430"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:10:02,431"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:10:02,432"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:10:02,433"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:11:02,445"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:11:02,446"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:11:02,447"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:11:02,448"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:11:02,449"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:11:02,449"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:11:02,450"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:11:02,451"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:11:02,453"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:11:02,453"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:11:02,454"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:12:02,455"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:12:02,456"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:12:02,457"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:12:02,458"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:12:02,459"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:12:02,459"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:12:02,460"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:12:02,460"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:12:02,461"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:12:02,462"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:12:02,462"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:13:02,463"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:13:02,464"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:13:02,464"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:13:02,465"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:13:02,466"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:13:02,469"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:13:02,471"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:13:02,471"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:13:02,472"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:13:02,472"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:13:02,473"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:14:02,484"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:14:02,485"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:14:02,485"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:14:02,486"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:14:02,487"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:14:02,487"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:14:02,488"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:14:02,488"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:14:02,491"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:14:02,492"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:14:02,493"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:14:13,757"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:14:58,895"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:15:02,137"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:15:02,140"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:15:02,141"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:15:02,142"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:15:02,142"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:15:02,143"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:15:02,143"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:15:02,143"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:15:02,144"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:15:02,144"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:15:02,144"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:15:02,144"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:15:02,145"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:15:02,145"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:15:02,147"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:15:16,540"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:17:28,541"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:17:34,323"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:17:34,326"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:17:34,328"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:17:34,328"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:17:34,329"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:17:34,330"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:17:34,330"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:17:34,330"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:17:34,331"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:17:34,331"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:17:34,331"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:17:34,332"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:17:34,332"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:17:34,333"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:17:34,335"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:17:50,73"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:19:12,108"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:19:16,193"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:19:16,196"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:19:16,198"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:19:16,199"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:19:16,199"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:19:16,200"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:19:16,201"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:19:16,202"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:19:16,202"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:19:16,202"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:19:16,203"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:19:16,203"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:19:16,204"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:19:16,204"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:19:16,207"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:19:40,483"}
+{"level":"debug","message":">>socket.io watch","timestamp":"2014/04/28 13:19:41,483"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:21:43,200"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:21:43,203"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:21:43,204"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:21:43,205"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:21:43,205"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:21:43,206"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:21:43,206"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:21:43,206"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:21:43,207"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:21:43,207"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:21:43,207"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:21:43,207"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:21:43,208"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:21:43,208"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:21:43,211"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:21:57,212"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:21:58,447"}
+{"level":"debug","message":">>socket.io unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:22:34,368"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:24:52,786"}
+{"level":"debug","message":">>socket.io unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:25:11,999"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:25:19,54"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:26:42,987"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:26:42,988"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:26:42,989"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:26:48,273"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 13:27:01,195"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:27:05,501"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:27:05,504"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:27:05,506"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:27:05,506"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:27:05,507"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:27:05,507"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:27:05,508"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:27:05,508"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:27:05,509"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:27:05,509"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:27:05,509"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:27:05,509"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:27:05,510"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:27:05,510"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:27:05,512"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:27:27,835"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:27:28,624"}
+{"level":"debug","message":">>socket.io unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:28:53,804"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:32:05,303"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 13:33:09,236"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:37:05,305"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:37:05,306"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:37:05,306"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:37:10,749"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:42:05,306"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:42:05,306"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:42:05,307"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:42:10,587"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:47:05,311"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:47:05,311"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:47:05,311"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:47:10,820"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:52:05,318"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:52:05,318"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:52:05,319"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:52:10,634"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 13:57:05,327"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 13:57:05,327"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 13:57:05,328"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 13:57:10,614"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 13:59:34,422"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 13:59:34,425"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 13:59:34,426"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:59:34,427"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 13:59:34,427"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:59:34,428"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:59:34,428"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 13:59:34,428"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 13:59:34,429"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 13:59:34,429"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 13:59:34,430"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 13:59:34,430"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 13:59:34,430"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 13:59:34,431"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 13:59:34,433"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 13:59:54,131"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 14:00:01,703"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:04:34,218"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 14:04:34,219"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 14:04:34,220"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 14:04:39,637"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 14:05:50,116"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 14:05:53,817"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 14:05:53,821"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 14:05:53,824"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:05:53,826"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 14:05:53,826"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:05:53,828"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:05:53,828"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 14:05:53,829"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:05:53,830"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 14:05:53,830"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:05:53,830"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 14:05:53,831"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 14:05:53,831"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 14:05:53,831"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 14:05:53,834"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 14:06:08,814"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 14:06:10,519"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:10:53,630"}
+{"level":"debug","message":">>socket.io watch - call watch","timestamp":"2014/04/28 14:10:53,631"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:15:53,635"}
+{"level":"debug","message":">>socket.io watch - call watch","timestamp":"2014/04/28 14:15:53,635"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:20:53,638"}
+{"level":"debug","message":">>socket.io watch - call watch","timestamp":"2014/04/28 14:20:53,638"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:25:53,647"}
+{"level":"debug","message":">>socket.io watch - call watch","timestamp":"2014/04/28 14:25:53,647"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:30:53,651"}
+{"level":"debug","message":">>socket.io watch - call watch","timestamp":"2014/04/28 14:30:53,651"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 14:31:06,569"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 14:31:12,392"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 14:31:12,395"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 14:31:12,396"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:31:12,397"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 14:31:12,397"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:31:12,398"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:31:12,399"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 14:31:12,399"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:31:12,399"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 14:31:12,399"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:31:12,400"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 14:31:12,400"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 14:31:12,401"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 14:31:12,401"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 14:31:12,405"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 14:31:29,574"}
+{"level":"debug","message":">>socket.io watch -D:/workspace/test/logs/console.log","timestamp":"2014/04/28 14:31:31,225"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:36:12,190"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 14:36:12,191"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 14:36:12,192"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 14:36:17,506"}
+{"level":"debug","message":">>socket.io unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 14:37:59,917"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 14:41:12,195"}
+{"date":"Mon Apr 28 2014 14:41:49 GMT+0900 (대한민국 표준시)","process":{"pid":5576,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":66506752,"heapTotal":51722616,"heapUsed":19659552}},"os":{"loadavg":[0,0,0],"uptime":21137.4546571},"trace":[],"stack":["Error: EINVAL, read"],"level":"error","message":"uncaughtException: EINVAL, read","timestamp":"2014/04/28 14:41:49,502"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 14:57:45,926"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 14:57:45,929"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 14:57:45,930"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:57:45,931"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 14:57:45,931"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:57:45,932"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:57:45,932"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 14:57:45,933"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 14:57:45,934"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 14:57:45,934"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 14:57:45,934"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 14:57:45,935"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 14:57:45,935"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 14:57:45,935"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 14:57:45,938"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 14:58:02,294"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 14:58:17,824"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 14:59:30,564"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]","timestamp":"2014/04/28 15:01:18,848"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:02:45,710"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:02:45,711"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:02:45,712"}
+{"date":"Mon Apr 28 2014 15:02:45 GMT+0900 (대한민국 표준시)","process":{"pid":3548,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":58798080,"heapTotal":53076224,"heapUsed":26637048}},"os":{"loadavg":[0,0,0],"uptime":22393.6705085},"trace":[{"column":43,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"StatWatcher.Watcher.onChange","line":258,"method":"Watcher.onChange","native":false},{"column":20,"file":"events.js","function":"StatWatcher.EventEmitter.emit","line":117,"method":"EventEmitter.emit","native":false},{"column":10,"file":"fs.js","function":"StatWatcher._handle.onchange","line":1104,"method":"_handle.onchange","native":false}],"stack":["ReferenceError: p is not defined","    at StatWatcher.Watcher.onChange (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:258:43)","    at StatWatcher.EventEmitter.emit (events.js:117:20)","    at StatWatcher._handle.onchange (fs.js:1104:10)"],"level":"error","message":"uncaughtException: p is not defined","timestamp":"2014/04/28 15:02:45,727"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 15:02:45,736"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:04:08,660"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:04:08,663"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 15:04:08,665"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:04:08,666"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 15:04:08,666"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:04:08,667"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:04:08,667"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 15:04:08,668"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:04:08,668"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 15:04:08,668"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:04:08,669"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 15:04:08,669"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 15:04:08,669"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 15:04:08,670"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 15:04:08,672"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:04:27,81"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:09:08,454"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:09:08,455"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:09:08,456"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:09:13,941"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:14:08,464"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:14:08,465"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:14:08,465"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:14:13,705"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:19:08,466"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:19:08,466"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:19:08,467"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:19:13,817"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:22:05,842"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 15:22:41,304"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:22:46,136"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:22:46,139"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 15:22:46,140"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:22:46,141"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 15:22:46,141"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:22:46,142"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:22:46,142"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 15:22:46,143"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:22:46,143"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 15:22:46,143"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:22:46,144"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 15:22:46,144"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 15:22:46,144"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 15:22:46,145"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 15:22:46,147"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:23:00,14"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:25:12,935"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:27:45,923"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:27:45,924"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:27:45,925"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:27:51,520"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:32:45,928"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:32:45,928"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:32:45,929"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:32:51,279"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 15:34:16,624"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:34:20,544"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:34:20,547"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 15:34:20,548"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:34:20,549"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 15:34:20,549"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:34:20,551"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:34:20,551"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 15:34:20,552"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:34:20,552"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 15:34:20,552"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:34:20,553"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 15:34:20,553"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 15:34:20,554"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 15:34:20,554"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 15:34:20,556"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:34:38,100"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:34:39,191"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:39:20,345"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:39:20,346"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:39:20,346"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:39:25,651"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:44:20,352"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:44:20,353"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:44:20,354"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:44:25,634"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 15:47:49,384"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:47:53,136"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:47:53,139"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 15:47:53,141"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:47:53,142"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 15:47:53,142"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:47:53,143"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:47:53,144"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 15:47:53,144"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:47:53,145"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 15:47:53,145"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:47:53,146"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 15:47:53,147"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 15:47:53,147"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 15:47:53,148"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 15:47:53,150"}
+{"date":"Mon Apr 28 2014 15:47:59 GMT+0900 (대한민국 표준시)","process":{"pid":6980,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":28950528,"heapTotal":17603072,"heapUsed":9505144}},"os":{"loadavg":[0,0,0],"uptime":25107.6367385},"trace":[{"column":10,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"","line":304,"method":null,"native":false},{"column":17,"file":"events.js","function":"Socket.EventEmitter.emit [as $emit]","line":95,"method":"EventEmitter.emit [as $emit]","native":false},{"column":10,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\socket.js","function":"Socket.onDisconnect","line":153,"method":"onDisconnect","native":false},{"column":46,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js","function":"SocketNamespace.handleDisconnect","line":229,"method":"handleDisconnect","native":false},{"column":29,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js","function":"Manager.onClientDisconnect","line":501,"method":"onClientDisconnect","native":false},{"column":20,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js","function":"WebSocket.Transport.end","line":467,"method":"Transport.end","native":false},{"column":10,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"","line":52,"method":null,"native":false},{"column":17,"file":"events.js","function":"Parser.EventEmitter.emit","line":92,"method":"EventEmitter.emit","native":false},{"column":12,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"Parser.opcodeHandlers.8","line":382,"method":"opcodeHandlers.8","native":false},{"column":8,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"Parser.processPacket","line":533,"method":"processPacket","native":false}],"stack":["TypeError: Object #<Socket> has no method 'close'","    at Socket.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:304:10)","    at Socket.EventEmitter.emit [as $emit] (events.js:95:17)","    at Socket.onDisconnect (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\socket.js:153:10)","    at SocketNamespace.handleDisconnect (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js:229:46)","    at Manager.onClientDisconnect (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js:501:29)","    at WebSocket.Transport.end (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js:467:20)","    at Parser.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:52:10)","    at Parser.EventEmitter.emit (events.js:92:17)","    at Parser.opcodeHandlers.8 (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:382:12)","    at Parser.processPacket (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:533:8)"],"level":"error","message":"uncaughtException: Object #<Socket> has no method 'close'","timestamp":"2014/04/28 15:47:59,690"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:49:31,959"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:49:31,963"}
+{"date":"Mon Apr 28 2014 15:49:31 GMT+0900 (대한민국 표준시)","process":{"pid":6660,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":21123072,"heapTotal":15551232,"heapUsed":6163856}},"os":{"loadavg":[0,0,0],"uptime":25199.923017},"trace":[{"column":null,"file":null,"function":"Object.parse","line":null,"method":"parse","native":true},{"column":25,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"","line":45,"method":null,"native":false},{"column":26,"file":"module.js","function":"Module._compile","line":456,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Object.Module._extensions..js","line":474,"method":"Module._extensions..js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":356,"method":"load","native":false},{"column":12,"file":"module.js","function":"Function.Module._load","line":312,"method":"Module._load","native":false},{"column":10,"file":"module.js","function":"Function.Module.runMain","line":497,"method":"Module.runMain","native":false},{"column":16,"file":"node.js","function":"startup","line":119,"method":null,"native":false},{"column":3,"file":"node.js","function":null,"line":902,"method":null,"native":false}],"stack":["SyntaxError: Unexpected end of input","    at Object.parse (native)","    at Object.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:45:25)","    at Module._compile (module.js:456:26)","    at Object.Module._extensions..js (module.js:474:10)","    at Module.load (module.js:356:32)","    at Function.Module._load (module.js:312:12)","    at Function.Module.runMain (module.js:497:10)","    at startup (node.js:119:16)","    at node.js:902:3"],"level":"error","message":"uncaughtException: Unexpected end of input","timestamp":"2014/04/28 15:49:31,973"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 15:51:00,837"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 15:51:00,840"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 15:51:00,842"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:51:00,843"}
+{"level":"debug","message":"logs/console_20140411.log - first timesize! ","timestamp":"2014/04/28 15:51:00,843"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:51:00,844"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:51:00,844"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 15:51:00,845"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 15:51:00,845"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 15:51:00,845"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 15:51:00,846"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - first timesize! ","timestamp":"2014/04/28 15:51:00,846"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 15:51:00,846"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 15:51:00,847"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 15:51:00,849"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:51:28,763"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 15:51:30,387"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 15:56:00,626"}
+{"level":"debug","message":"tail start","timestamp":"2014/04/28 15:56:00,627"}
+{"level":"debug","message":"filterText:","timestamp":"2014/04/28 15:56:00,628"}
+{"level":"debug","message":"tail end","timestamp":"2014/04/28 15:56:05,994"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 15:59:01,869"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:19:00,381"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:19:00,384"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:19:00,386"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:19:00,387"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:19:00,387"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:19:00,388"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:19:00,388"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:19:00,389"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:19:00,390"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:19:00,390"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:19:00,390"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:19:00,391"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:19:00,391"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:19:00,392"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:19:00,395"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:20:32,564"}
+{"date":"Mon Apr 28 2014 16:20:34 GMT+0900 (대한민국 표준시)","process":{"pid":4448,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":48824320,"heapTotal":36299008,"heapUsed":25121912}},"os":{"loadavg":[0,0,0],"uptime":27061.9925212},"trace":[{"column":18,"file":"fs.js","function":"Object.fs.statSync","line":684,"method":"fs.statSync","native":false},{"column":13,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"Watcher.watch [as _onTimeout]","line":252,"method":"watch [as _onTimeout]","native":false},{"column":15,"file":"timers.js","function":"Timer.listOnTimeout [as ontimeout]","line":110,"method":"listOnTimeout [as ontimeout]","native":false}],"stack":["TypeError: path must be a string","    at Object.fs.statSync (fs.js:684:18)","    at Watcher.watch [as _onTimeout] (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:252:13)","    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)"],"level":"error","message":"uncaughtException: path must be a string","timestamp":"2014/04/28 16:20:34,46"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 16:20:34,49"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:32:15,837"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:32:15,840"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:32:15,841"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:32:15,842"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:32:15,842"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:32:15,843"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:32:15,844"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:32:15,844"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:32:15,845"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:32:15,845"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:32:15,846"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:32:15,846"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:32:15,847"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:32:15,847"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:32:15,850"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:32:49,96"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 16:37:15,627"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:40:19,312"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:40:19,315"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:40:19,316"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:40:19,316"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:40:19,317"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:40:19,318"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:40:19,318"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:40:19,318"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:40:19,319"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:40:19,319"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:40:19,319"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:40:19,320"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:40:19,320"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:40:19,321"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:40:19,323"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:40:26,859"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:40:26,861"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:40:26,862"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:40:26,864"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:50:38,23"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:50:38,26"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:50:38,28"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:50:38,29"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:50:38,29"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:50:38,30"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:50:38,30"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:50:38,31"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:50:38,31"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:50:38,31"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:50:38,32"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:50:38,32"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:50:38,32"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:50:38,33"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:50:38,35"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:50:56,47"}
+{"date":"Mon Apr 28 2014 16:50:57 GMT+0900 (대한민국 표준시)","process":{"pid":6512,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":49913856,"heapTotal":36286976,"heapUsed":22842192}},"os":{"loadavg":[0,0,0],"uptime":28885.0067917},"trace":[{"column":15,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"Watcher.watch","line":256,"method":"watch","native":false},{"column":12,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"","line":323,"method":null,"native":false},{"column":17,"file":"events.js","function":"Socket.EventEmitter.emit [as $emit]","line":95,"method":"EventEmitter.emit [as $emit]","native":false},{"column":22,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js","function":"SocketNamespace.handlePacket","line":335,"method":"handlePacket","native":false},{"column":38,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js","function":"Manager.onClientMessage","line":488,"method":"onClientMessage","native":false},{"column":20,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js","function":"WebSocket.Transport.onMessage","line":387,"method":"Transport.onMessage","native":false},{"column":10,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"","line":39,"method":null,"native":false},{"column":17,"file":"events.js","function":"Parser.EventEmitter.emit","line":95,"method":"EventEmitter.emit","native":false},{"column":16,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"finish","line":288,"method":null,"native":false},{"column":15,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"Parser.expectHandler","line":299,"method":"expectHandler","native":false}],"stack":["ReferenceError: pt is not defined","    at Watcher.watch (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:256:15)","    at Socket.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:323:12)","    at Socket.EventEmitter.emit [as $emit] (events.js:95:17)","    at SocketNamespace.handlePacket (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js:335:22)","    at Manager.onClientMessage (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js:488:38)","    at WebSocket.Transport.onMessage (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js:387:20)","    at Parser.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:39:10)","    at Parser.EventEmitter.emit (events.js:95:17)","    at finish (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:288:16)","    at Parser.expectHandler (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:299:15)"],"level":"error","message":"uncaughtException: pt is not defined","timestamp":"2014/04/28 16:50:57,71"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:51:50,459"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:51:50,464"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:51:50,466"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:51:50,468"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:51:50,468"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:51:50,469"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:51:50,470"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:51:50,470"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:51:50,470"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:51:50,470"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:51:50,471"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:51:50,471"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:51:50,472"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:51:50,472"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:51:50,476"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:52:02,737"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:55:55,6"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:55:55,9"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:55:55,10"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:55:55,12"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:55:55,12"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:55:55,13"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:55:55,14"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:55:55,15"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:55:55,16"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:55:55,16"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:55:55,16"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:55:55,17"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:55:55,18"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:55:55,18"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:55:55,20"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 16:55:55,243"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:55:59,786"}
+{"level":"debug","message":"Watcher - unwatch","timestamp":"2014/04/28 16:55:59,787"}
+{"level":"debug","message":"watch end - ","timestamp":"2014/04/28 16:55:59,789"}
+{"level":"debug","message":"Watcher - unwatch","timestamp":"2014/04/28 16:55:59,789"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:57:44,0"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:57:44,3"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:57:44,5"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:57:44,6"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:57:44,6"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:57:44,7"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:57:44,8"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:57:44,8"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:57:44,9"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:57:44,9"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:57:44,9"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:57:44,10"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:57:44,10"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:57:44,11"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:57:44,14"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 16:57:44,246"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:57:58,814"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 16:58:00,31"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 16:58:00,33"}
+{"level":"debug","message":"Watcher - end","timestamp":"2014/04/28 16:58:00,542"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 16:59:03,593"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 16:59:06,591"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 16:59:06,594"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 16:59:06,596"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:59:06,596"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 16:59:06,597"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:59:06,598"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:59:06,598"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 16:59:06,598"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 16:59:06,599"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 16:59:06,599"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 16:59:06,600"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 16:59:06,600"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 16:59:06,600"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 16:59:06,601"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 16:59:06,603"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 16:59:06,829"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 16:59:21,297"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 16:59:22,170"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 16:59:22,171"}
+{"level":"debug","message":"Watcher - end","timestamp":"2014/04/28 16:59:22,675"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:02:28,208"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:02:28,210"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:02:28,212"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:02:28,212"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:02:28,213"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:02:28,213"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:02:28,214"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:02:28,214"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:02:28,214"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:02:28,214"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:02:28,215"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:02:28,216"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:02:28,216"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:02:28,216"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:02:28,219"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:02:28,459"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:02:41,998"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:02:43,935"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 17:02:43,936"}
+{"date":"Mon Apr 28 2014 17:02:44 GMT+0900 (대한민국 표준시)","process":{"pid":2624,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":50073600,"heapTotal":36286976,"heapUsed":23416672}},"os":{"loadavg":[0,0,0],"uptime":29592.4072527},"trace":[{"column":8,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"Watcher.watch [as _onTimeout]","line":264,"method":"watch [as _onTimeout]","native":false},{"column":15,"file":"timers.js","function":"Timer.listOnTimeout [as ontimeout]","line":110,"method":"listOnTimeout [as ontimeout]","native":false}],"stack":["TypeError: Object [object Object] has no method 'onChange'","    at Watcher.watch [as _onTimeout] (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:264:8)","    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)"],"level":"error","message":"uncaughtException: Object [object Object] has no method 'onChange'","timestamp":"2014/04/28 17:02:44,462"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:04:56,897"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:04:56,900"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:04:56,902"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:04:56,902"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:04:56,903"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:04:56,903"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:04:56,904"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:04:56,904"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:04:56,904"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:04:56,905"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:04:56,906"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:04:56,906"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:04:56,906"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:04:56,907"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:04:56,909"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:04:57,141"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:05:08,529"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:05:09,503"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 17:05:09,519"}
+{"date":"Mon Apr 28 2014 17:05:10 GMT+0900 (대한민국 표준시)","process":{"pid":3832,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":48545792,"heapTotal":52044288,"heapUsed":17373216}},"os":{"loadavg":[0,0,0],"uptime":29737.9925797},"trace":[{"column":15,"file":"timers.js","function":"Timer.listOnTimeout [as ontimeout]","line":110,"method":"listOnTimeout [as ontimeout]","native":false}],"stack":["TypeError: Property '_onTimeout' of object [object Object] is not a function","    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)"],"level":"error","message":"uncaughtException: Property '_onTimeout' of object [object Object] is not a function","timestamp":"2014/04/28 17:05:10,47"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 17:05:10,50"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:06:00,642"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:06:00,645"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:06:00,647"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:06:00,648"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:06:00,648"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:06:00,649"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:06:00,649"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:06:00,649"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:06:00,649"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:06:00,649"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:06:00,650"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:06:00,651"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:06:00,651"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:06:00,652"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:06:00,654"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:06:00,881"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:06:11,956"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:06:13,105"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 17:06:13,106"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:06:13,615"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:06:13,615"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:06:13,618"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:06:13,636"}
+{"level":"debug","message":"watch end - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:07:07,38"}
+{"level":"debug","message":"Watcher - unwatch","timestamp":"2014/04/28 17:07:07,39"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:07:12,128"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:07:46,250"}
+{"level":"debug","message":"Watcher - start","timestamp":"2014/04/28 17:07:46,251"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:07:46,764"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:07:46,765"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:07:46,766"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:07:46,775"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:11:00,445"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 17:12:14,853"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:12:17,884"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:12:17,887"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:12:17,888"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:12:17,889"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:12:17,890"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:12:17,890"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:12:17,891"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:12:17,891"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:12:17,892"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:12:17,892"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:12:17,893"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:12:17,893"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:12:17,894"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:12:17,894"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:12:17,897"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:12:18,124"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:12:35,202"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:12:36,470"}
+{"date":"Mon Apr 28 2014 17:12:36 GMT+0900 (대한민국 표준시)","process":{"pid":6440,"uid":null,"gid":null,"cwd":"C:\\Users\\jbpark\\git\\wlog\\wlog","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v0.10.26","argv":["node","C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js"],"memoryUsage":{"rss":49725440,"heapTotal":36286976,"heapUsed":23229592}},"os":{"loadavg":[0,0,0],"uptime":30184.4301145},"trace":[{"column":16,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"Watcher.watch","line":270,"method":"watch","native":false},{"column":12,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js","function":"","line":330,"method":null,"native":false},{"column":17,"file":"events.js","function":"Socket.EventEmitter.emit [as $emit]","line":95,"method":"EventEmitter.emit [as $emit]","native":false},{"column":22,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js","function":"SocketNamespace.handlePacket","line":335,"method":"handlePacket","native":false},{"column":38,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js","function":"Manager.onClientMessage","line":488,"method":"onClientMessage","native":false},{"column":20,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js","function":"WebSocket.Transport.onMessage","line":387,"method":"Transport.onMessage","native":false},{"column":10,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"","line":39,"method":null,"native":false},{"column":17,"file":"events.js","function":"Parser.EventEmitter.emit","line":95,"method":"EventEmitter.emit","native":false},{"column":16,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"finish","line":288,"method":null,"native":false},{"column":15,"file":"C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js","function":"Parser.expectHandler","line":299,"method":"expectHandler","native":false}],"stack":["ReferenceError: pt is not defined","    at Watcher.watch (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:270:16)","    at Socket.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\app.js:330:12)","    at Socket.EventEmitter.emit [as $emit] (events.js:95:17)","    at SocketNamespace.handlePacket (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\namespace.js:335:22)","    at Manager.onClientMessage (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\manager.js:488:38)","    at WebSocket.Transport.onMessage (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transport.js:387:20)","    at Parser.<anonymous> (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:39:10)","    at Parser.EventEmitter.emit (events.js:95:17)","    at finish (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:288:16)","    at Parser.expectHandler (C:\\Users\\jbpark\\git\\wlog\\wlog\\node_modules\\socket.io\\lib\\transports\\websocket\\hybi-16.js:299:15)"],"level":"error","message":"uncaughtException: pt is not defined","timestamp":"2014/04/28 17:12:36,488"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:14:08,401"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:14:08,404"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:14:08,405"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:14:08,406"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:14:08,406"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:14:08,407"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:14:08,407"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:14:08,407"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:14:08,408"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:14:08,408"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:14:08,408"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:14:08,408"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:14:08,409"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:14:08,409"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:14:08,412"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:14:08,647"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:14:23,457"}
+{"level":"debug","message":">>socket.io watch call","timestamp":"2014/04/28 17:14:24,483"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:14:24,484"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:19:08,199"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:19:08,200"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:19:08,201"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:19:13,464"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:24:08,204"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:24:08,205"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:24:08,205"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:24:13,398"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 17:25:54,853"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:25:58,2"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:25:58,6"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:25:58,7"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:25:58,8"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:25:58,8"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:25:58,9"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:25:58,9"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:25:58,10"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:25:58,10"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:25:58,10"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:25:58,11"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:25:58,11"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:25:58,11"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:25:58,12"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:25:58,14"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:25:58,231"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:26:10,722"}
+{"level":"debug","message":"watch start D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:26:12,185"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:30:57,842"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:30:57,842"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:30:57,843"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:31:03,244"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 17:34:05,803"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:34:10,607"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:34:10,610"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:34:10,611"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:34:10,612"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:34:10,612"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:34:10,613"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:34:10,613"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:34:10,614"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:34:10,614"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:34:10,614"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:34:10,615"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:34:10,615"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:34:10,615"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:34:10,616"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:34:10,618"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:34:10,837"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:34:25,708"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:34:26,911"}
+{"level":"debug","message":"unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:36:44,490"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:36:53,262"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 17:38:56,210"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 17:47:33,187"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 17:47:33,190"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 17:47:33,193"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:47:33,194"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 17:47:33,194"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:47:33,195"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:47:33,195"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 17:47:33,196"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 17:47:33,220"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 17:47:33,221"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 17:47:33,222"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 17:47:33,222"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 17:47:33,223"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 17:47:33,227"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 17:47:33,230"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 17:47:33,472"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:47:52,739"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:48:42,741"}
+{"level":"debug","message":"unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:49:35,34"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:49:49,10"}
+{"level":"debug","message":"unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:50:10,298"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:50:21,82"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:52:32,950"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 17:52:32,951"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 17:52:32,951"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 17:52:38,609"}
+{"level":"debug","message":"unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 17:57:10,969"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 17:57:32,955"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:00:40,697"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:00:43,712"}
+{"level":"debug","message":"unwatch - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:00:45,778"}
+{"level":"debug","message":"nodeInfo.json:logs/console_20140411.log","timestamp":"2014/04/28 18:00:51,826"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:00:53,209"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:01:09,262"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 18:02:32,960"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 18:02:32,960"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 18:02:32,961"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 18:02:39,456"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 18:07:32,970"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 18:07:32,970"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 18:07:32,971"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 18:07:38,491"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 18:12:32,973"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 18:12:32,974"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 18:12:32,974"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 18:12:39,812"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 18:13:01,788"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 18:13:07,516"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 18:13:07,519"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 18:13:07,520"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:13:07,521"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 18:13:07,521"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:13:07,522"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:13:07,523"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 18:13:07,523"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:13:07,524"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 18:13:07,524"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:13:07,525"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 18:13:07,525"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 18:13:07,526"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 18:13:07,526"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 18:13:07,529"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 18:13:07,747"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:13:21,678"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:13:23,241"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 18:15:45,391"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 18:15:45,395"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 18:15:45,396"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:15:45,397"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 18:15:45,397"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:15:45,398"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:15:45,398"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 18:15:45,399"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:15:45,399"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 18:15:45,399"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:15:45,400"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 18:15:45,400"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 18:15:45,401"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 18:15:45,401"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 18:15:45,403"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 18:15:45,623"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:16:00,599"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:16:02,24"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 18:17:50,578"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 18:17:50,581"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 18:17:50,582"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:17:50,583"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 18:17:50,583"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:17:50,584"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:17:50,584"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 18:17:50,585"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:17:50,585"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 18:17:50,585"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:17:50,587"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 18:17:50,587"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 18:17:50,588"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 18:17:50,588"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 18:17:50,590"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 18:17:50,818"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:18:02,987"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:18:04,49"}
+{"level":"info","message":"wlog server shutdown!","timestamp":"2014/04/28 18:19:13,81"}
+{"level":"info","message":"read server.conf!","timestamp":"2014/04/28 18:19:16,587"}
+{"level":"debug","message":"{\r\n\t\"port\": 3000,\r\n\t\"maxLine\": 1000,\r\n\t\"encryptKey\": \"wlog$cookieParser$encrypt#key\",\r\n\t\"fileReloadTime\": 60000,\r\n\t\"files\": [\r\n\t\t{\"id\": \"ap01\", \"name\":\"기간계 AP1\", \"path\":\"logs\", \"filter\":\"console_([0-9]){8}\\\\.log\"},\r\n\t\t{\"id\": \"test\", \"name\":\"테스트 시스템\", \"path\":\"D:/workspace/test/logs\", \"filter\":\"console\\\\.log\"}\r\n\t],\r\n\t\"users\": [\r\n\t\t{\"id\":\"test1\", \"name\":\"test1\", \"passwd\":\"1234\"},\r\n\t\t{\"id\":\"test2\", \"name\":\"test2\", \"passwd\":\"1234\"}\r\n\t]\r\n}","timestamp":"2014/04/28 18:19:16,592"}
+{"level":"debug","message":"load file - logs","timestamp":"2014/04/28 18:19:16,593"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:19:16,594"}
+{"level":"debug","message":"logs/console_20140411.log - add timesize!","timestamp":"2014/04/28 18:19:16,594"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:19:16,595"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:19:16,595"}
+{"level":"debug","message":"file date:22, today:28","timestamp":"2014/04/28 18:19:16,595"}
+{"level":"debug","message":"file date:25, today:28","timestamp":"2014/04/28 18:19:16,596"}
+{"level":"debug","message":"load file - D:/workspace/test/logs","timestamp":"2014/04/28 18:19:16,596"}
+{"level":"debug","message":"file date:28, today:28","timestamp":"2014/04/28 18:19:16,597"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - add timesize!","timestamp":"2014/04/28 18:19:16,597"}
+{"level":"info","message":"files load end.","timestamp":"2014/04/28 18:19:16,597"}
+{"level":"info","message":"make nodes","timestamp":"2014/04/28 18:19:16,598"}
+{"level":"debug","message":"[{\"id\":\"ap01\",\"parent\":\"#\",\"text\":\"기간계 AP1\"},{\"id\":\"ap01_3\",\"parent\":\"ap01\",\"text\":\"console_20140411.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_4\",\"parent\":\"ap01\",\"text\":\"console_20140412.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_5\",\"parent\":\"ap01\",\"text\":\"console_20140413.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_6\",\"parent\":\"ap01\",\"text\":\"console_20140414.log\",\"icon\":\"images/document.png\"},{\"id\":\"ap01_7\",\"parent\":\"ap01\",\"text\":\"console_20140415.log\",\"icon\":\"images/document.png\"},{\"id\":\"test\",\"parent\":\"#\",\"text\":\"테스트 시스템\"},{\"id\":\"test_0\",\"parent\":\"test\",\"text\":\"console.log\",\"icon\":\"images/document.png\"}]","timestamp":"2014/04/28 18:19:16,600"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014/04/28 18:19:16,821"}
+{"level":"debug","message":"nodeInfo.json:D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:19:31,574"}
+{"level":"debug","message":"watch start - D:/workspace/test/logs/console.log","timestamp":"2014/04/28 18:19:33,752"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 18:24:16,399"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 18:24:16,400"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 18:24:16,401"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 18:24:22,757"}
+{"level":"debug","message":"D:/workspace/test/logs/console.log - watch time size! ","timestamp":"2014/04/28 18:29:16,403"}
+{"level":"debug","message":"Watcher - onChange - start","timestamp":"2014/04/28 18:29:16,404"}
+{"level":"debug","message":"Watcher - filterText:","timestamp":"2014/04/28 18:29:16,405"}
+{"level":"debug","message":"Watcher - onChange - end","timestamp":"2014/04/28 18:29:22,933"}
