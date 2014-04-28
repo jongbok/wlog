@@ -13,7 +13,7 @@ function sizeToTime($scope){
 		first = $scope.times[0];
 		last = $scope.times[$scope.times.length-1];
 		if(bytes <= first.size){
-			per = bytes / first.size;
+			per = 1 - bytes / first.size;
 			gap = new Date(first.time).getTime() - $scope.ctime.getTime();
 			time = $scope.ctime.getTime() + Math.floor(gap * per);
 		}else if(bytes >= last.size){
@@ -36,7 +36,7 @@ function sizeToTime($scope){
 			}
 		}
 	}else{
-		per = bytes / $scope.fileSize;
+		per = 1 - bytes / $scope.fileSize;
 		gap = $scope.mtime.getTime() - $scope.ctime.getTime();
 		time = $scope.ctime.getTime() + Math.floor(gap * per);
 	}
@@ -89,31 +89,49 @@ function timeToSize($scope){
 $.blockUI.defaults.css.cursor = 'default';
 $.blockUI.defaults.overlayCSS.cursor = 'default';
 
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect(location.protocol + '//' + location.host);
 var app = angular.module('app', []);
 
 app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
+	$scope.tail = {};
 	$(document).ready(function(){
 		$('div.content').block({message:null});
-		document.onkeydown = function(evt) {
-			switch (evt.keyCode) {
-				case 13:
-					if($scope.tabs.idx === 1){
-						alert('tail start');
-					}
-					break;
+		$(document).keydown(function(evt){
+			switch(evt.which){
 				case 27:
-					if($scope.tabs.idx === 1){
-						alert('tail stop');
-					}
+					socket.emit('unwatch', {id: $scope.nodeId});
+					$scope.$apply(function(){
+						$scope.tail.state = false;
+					});
+					console.log('tail stop keyevent');
 					break;
-				case 34:
-					if($scope.tabs.idx === 0){
-						alert('nextview');
+				case 78:
+					console.log('tab.idx:' + $scope.tabs.idx);
+					var tabIdx = $scope.tabs.idx || 0;
+					if(tabIdx === 0){
+						console.log('next');
+						var start = $scope.lastBytes || 0;
+						$http.jsonp('/wlog/getLog.json?callback=JSON_CALLBACK&id=' + $scope.nodeId + '&start=' + $scope.lastBytes).
+						success(function(data){
+							$('#output').scrollTop($('#output')[0].scrollHeight);
+							var output = $scope.output + data.output;
+							var rows = output.split('\n');
+							$scope.output = rows.slice(rows.length - 10000).join('\n');
+							$scope.lastBytes = data.bytes;
+						}).
+						error(function(data, status, headers, config){
+							$scope.errMsg = 'status:' + status + ' - cannot get next log!';
+						});				
+					}else{
+						socket.emit('watch', {id: $scope.nodeId});
+						$scope.$apply(function(){
+							$scope.tail.state = true;
+						});
+						console.log('tail start keyevent');
 					}
 					break;
 			}
-		};	
+		});
 		
 		var gap = $(window).height() - $("#wrapper").height();
 		$("#output").height($(window).height()-250);
@@ -133,8 +151,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		}
 	};
 	
-	function changeDateTime(){
-		var start = timeToSize($scope);
+	function getLog(start){
 		$scope.slider.setValue(start);
 		$scope.search.bytes = start;
 		console.log('start:' + start);
@@ -143,16 +160,13 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 				$scope.output = data.output;
 				$scope.lastBytes = data.bytes;
 			}).
-			error(function(){
-				alert('error');
+			error(function(data, status, headers, config){
+				$scope.errMsg = 'status:' + status + ',start:' + start + ' - cannot get log!';
 			});				
 	}
-	
-	$scope.onChangeDate = changeDateTime;
-	$scope.onChangeTime = function(){
-		if(event.which === 13){
-			changeDateTime();
-		}
+	$scope.onChangeDate = function(){
+		var start = timeToSize($scope);
+		getLog(start);
 	};
 	
 	$scope.tabs = {};
@@ -160,9 +174,14 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		$scope.tabs.idx = tabIdx;
 		if(tabIdx === 1){
 			console.log('tail start');
-			$scope.output = '';
+			$scope.$apply(function(){
+				$scope.output = '';
+				$scope.tail.state = true;
+			});
 			socket.emit('watch', {id: $scope.nodeId});
 		}else{
+			console.log('unwatch');
+			$scope.tail.state = false;
 			socket.emit('unwatch', {id: $scope.nodeId});
 		}
 	};
@@ -175,16 +194,10 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		}else{
 			$http.jsonp('/wlog/nodeInfo.json?callback=JSON_CALLBACK&id=' + node.id).
 				success(function(data){
-					var dates = [];
+					$scope.tabs.refresh();
 					var ctime = new Date(data.ctime);
 					var mtime = new Date(data.mtime);
 					console.log('ctime:' + ctime + ', mtime:' + mtime);
-					var d = new Date(mtime);
-					d.setHours(0, 0, 0, 0);
-					do{
-						dates.push(new Date(d));
-						d.setDate(d.getDate() - 1);
-					}while(d.getTime() > ctime.getTime());
 					
 					$scope.search = $scope.search || {};
 					$scope.ctime = ctime;
@@ -192,39 +205,31 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 					$scope.times = data.times;
 					$scope.fileSize = data.size;
 					$scope.fileName = node.text;
-					$scope.search.dates = dates;
 					$scope.search.date = ctime;
 					$scope.output = '';
 					$scope.nodeId = node.id;
-					
+					getLog(0);
 					$('div.content').unblock();
 				}).
 				error(function(data, status, headers, config){
-					alert('error');
+					$scope.errMsg = 'status:' + status + ' - cannot get node info!';
 				});
 		}
 	};
 	
-	$scope.setOutput = function(text){
+	socket.on('tail', function(text){
 		$scope.$apply(function(){
-			$scope.output += text;
+			$('#output').scrollTop($('#output').scrollHeight);
+			var output = $scope.output + text;
+			var rows = output.split('\n');
+			$scope.output = rows.slice(rows.length - 10000).join('\n');
 		});
-		console.log(text);
-	};
-	socket.on('tail', $scope.setOutput);
+	});
 	
 	$scope.slider = $scope.slider || {};
 	$scope.slider.sliding = function(size){
-		var d = sizeToTime($scope);
-		$scope.search.date = d;
-		$http.jsonp('/wlog/getLog.json?callback=JSON_CALLBACK&id=' + $scope.nodeId + '&start=' + size).
-		success(function(data){
-			$scope.output = data.output;
-			$scope.lastBytes = data.bytes;
-		}).
-		error(function(){
-			alert('error');
-		});
+		$scope.search.date = sizeToTime($scope);
+		getLog(size);
 	};
 }]);
 
@@ -239,11 +244,6 @@ app.directive('slider', function() {
 					step : 100,
 					slide : function(event, ui) {
 						scope.search.bytes = ui.value;
-						/*
-						scope.$apply(function(){
-							ngModelCtrl.$setViewValue(ui.value);
-						});
-						*/
 					},
 					stop : function(event, ui) {
 						scope.slider.sliding(ui.value);
@@ -266,6 +266,10 @@ app.directive('tabs', function() {
 		restrict : 'A',
 		link : function(scope, element, attrs) {
 			$(function() {
+				scope.tabs = scope.tabs || {};
+				scope.tabs.refresh = function(){
+					element.tabs('option','active',0);
+				};
 				element.tabs({
 					heightStyle : 'auto',
 					activate : function(event, ui) {
