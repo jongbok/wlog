@@ -8,10 +8,7 @@
 var wlog = {};
 
 wlog.init = function(){
-	var initHeight = $(window).height();
-	var gap = initHeight - $("#wrapper").height();
-	$("#output").height(initHeight-250);
-	$("#left-sidebar").height(initHeight - gap - $("#header").height() - $("#footer").height() );
+	$("#output").height($(window).height()-230);
 };
 
 wlog.sizeToTime = function(bytes, timesize){
@@ -83,11 +80,12 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 						var start = $scope.lastBytes || 0;
 						$http.jsonp('/wlog/getLog.json?callback=JSON_CALLBACK&id=' + $scope.nodeId + '&start=' + $scope.lastBytes).
 						success(function(data){
-							$('#output').scrollTop($('#output')[0].scrollHeight);
+							$('#output').scrollTop($('#output:first').get(0).scrollHeight);
 							var output = $scope.output + data.output;
 							var rows = output.split('\n');
 							$scope.output = rows.slice(rows.length - 10000).join('\n');
 							$scope.lastBytes = data.bytes;
+							$scope.errMsg = '';
 						}).
 						error(function(data, status, headers, config){
 							$scope.errMsg = 'status:' + status + ' - cannot get next log!';
@@ -106,9 +104,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 		wlog.init();
 	});
 	
-	$scope.autocomplete = {};
-	$scope.autocomplete.source = ["error|Error|ERROR", "Exception|\\sat\\s"];
-	$scope.autocomplete.keypress = function(text){
+	$scope.tail.setFilterText = function(text){
 		if(event.which === 13){
 			socket.emit('filter', {filterText: text});
 			console.log('emit filter:' + text);
@@ -127,6 +123,7 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 			success(function(data){
 				$scope.output = data.output;
 				$scope.lastBytes = data.bytes;
+				$scope.errMsg = '';
 			}).
 			error(function(data, status, headers, config){
 				$scope.errMsg = 'status:' + status + ',start:' + start + ' - cannot get log!';
@@ -202,9 +199,18 @@ app.controller('wlogCtrl',['$scope', '$http', function($scope, $http){
 	socket.on('tail', function(text){
 		var output = $scope.output + text;
 		var rows = output.split('\n');
-		$scope.output = rows.slice(rows.length - 10000).join('\n');
-		$scope.$digest();
-		$('#output').scrollTop($('#output').scrollHeight);
+		$scope.$apply(function(){
+			$scope.output = rows.slice(rows.length - 10000).join('\n');
+			$('#output').scrollTop($('#output:first').get(0).scrollHeight);
+		});
+	});
+	
+	socket.on('disconnect', function(){
+		$scope.$apply(function(){
+			$scope.tail.state = false;
+			$scope.errMsg = 'socket disconnected - cannot connect to server!';
+		});
+		console.log('socekt disconnected!');
 	});
 	
 	$scope.slider = $scope.slider || {};
@@ -222,7 +228,7 @@ app.directive('slider', function() {
 				element.slider({
 					min : 0,
 					max : 0,
-					step : 100,
+					step : 500,
 					slide : function(event, ui) {
 						scope.search.bytes = ui.value;
 					},
@@ -261,26 +267,6 @@ app.directive('tabs', function() {
 		}
 	};
 });
-
-app.directive('autocomplete', function() {
-	return {
-		restrict : 'A',
-		require : 'ngModel',
-		link : function(scope, element, attrs, ngModelCtrl) {
-			$(function() {
-				element.autocomplete({
-					source: scope.autocomplete.source,
-					change: function( event, ui ) {
-						scope.$apply(function(){
-							ngModelCtrl.$setViewValue(ui.value);
-						});
-					}
-				});
-			});
-		}
-	};
-});
-
 
 app.directive('jstree', function() {
 	return {

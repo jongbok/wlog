@@ -24,7 +24,7 @@
 		<table border="0" width="100%" >
 			<tr>
 				<th align="left" style="font-size: 15pt; padding-left: 10px;" >
-					<b>Wlog Viewer</b>
+					<img src="/images/wlog.png" height="40" border="0" />
 				</th>
 				<td align="right" >
 					<a href='/logout' >Log out</a>
@@ -70,7 +70,7 @@
 							<tr>
 								<th>Filter:</th>
 								<td>
-									<input type="text" size="100" id="filterText" autocomplete ng-model="tail.filterText" ng-keydown="autocomplete.keypress(tail.filterText);" placeholder="검색하고자 하는 정규표현식을 입력하시고 Enter-Key를 입력하세요!" />
+									<input type="text" size="100" id="filterText" ng-model="tail.filterText" ng-keydown="tail.setFilterText(tail.filterText);" autocomplete="on" placeholder="추출하고자 하는 문자를 입력하시고 Enter-Key를 입력하세요!" />
 								</td>
 							</tr>
 							<tr>
@@ -95,7 +95,7 @@
 		</aside>
 	</div>
 	<footer class="footer" >
-		Copyright (c) 2014 Jong-Bok,Park  All rights reserved.
+		Copyright (c) 2014 Jong-Bok,Park(asdkf20@naver.com)  All rights reserved.
 	</footer>
 </div>
 </body>
