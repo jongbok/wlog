@@ -39,35 +39,29 @@ Wlog(Web based Fast Log Viewer)
 ###사용법
  * 로그인
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/login_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/login_resize.png)
 
  * 메인
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/main_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/main_resize.png)
 
  * 파일선택
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/click_file_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/click_file_resize.png)
 
  * byte 탐색('n' key를 입력하면 더많은 행을 조회한다.)
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/byte_search_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/byte_search_resize.png)
 
  * 시간 탐색('n' key를 입력하면 더많은 행을 조회한다.)
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/time_search_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/time_search_resize.png)
 
  * tail(Esc key를 입력하면 중지되고, 'n' key를 입력하면 재실행 된다.
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/tail_start_resize.png)
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/tail_stop_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/tail_start_resize.png)
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/tail_stop_resize.png)
 
  * Filter
 
-![alt tag](http://dev.naver.com/wiki/wlog/pds/FrontPage/tail_filter_resize.png)
-
-###관련정보 링크
- * http://blog.naver.com/asdkf20 [Blog]
- * http://dev.naver.com/projects/rclog [RCLog4j(Runtime Configuration Log4j)]
- * http://dev.naver.com/projects/noti-j [noti-J(Simple Message Push)]
- * http://dev.naver.com/projects/s-cross [S-Cross(Simpe Cross-Site Security)]
+![alt tag](https://raw.githubusercontent.com/jongbok/wlog/master/docs/images/tail_filter_resize.png)
